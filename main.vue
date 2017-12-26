@@ -1,14 +1,15 @@
 new Vue({
-	el: "#root",
+	el: "#exercise",
 	data: {
-		name: 'Jon',
-		age: 23,
-		imgSrc: 'https://vuejs.org/images/logo.png'
+		value: ''
 	},
 
 	methods: {
-		randomNum(){
-			return Math.random() * 1
+		alert(){
+			alert('show me!')
+		},
+		onKeyDown(event){
+			this.value=event.target.value
 		}
 	}
 })
