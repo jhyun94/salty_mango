@@ -1,18 +1,15 @@
 new Vue({
 	el: "#root",
 	data: {
-		value: 0,
-		x: 0,
-		y: 0
+		counter: 0,
+		result: ''
 	},
 
 	methods: {
 		increment(){
-			this.value++
-		},
-		coordinates(event){
-			this.x= event.clientX;
-			this.y= event.clientY;
+			this.counter++;
+			this.result= this.counter > 5 ? 'Greater than 5' : 'less than 5';
+			
 		}
 	}
 })
