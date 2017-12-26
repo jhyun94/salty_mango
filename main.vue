@@ -1,15 +1,18 @@
 new Vue({
-	el: "#exercise",
+	el: "#root",
 	data: {
-		value: ''
+		value: 0,
+		x: 0,
+		y: 0
 	},
 
 	methods: {
-		alert(){
-			alert('show me!')
+		increment(){
+			this.value++
 		},
-		onKeyDown(event){
-			this.value=event.target.value
+		coordinates(event){
+			this.x= event.clientX;
+			this.y= event.clientY;
 		}
 	}
 })
