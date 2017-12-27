@@ -5,14 +5,14 @@
 	<script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
 </head>
 <body>
-	<div class="#root">
+	<div id="root">
 		<div class="container"> <!-- healthbar -->
 			<div class="row">
 				<div class="col-md-6 text-center">
 					<h2>You</h2>
 					<div class="healthbar">
 						<div class="health">
-							<span class="text-white">100</span>
+							<span class="text-white">{{playerLife}}</span>
 						</div>
 					</div>
 				</div>
@@ -21,7 +21,7 @@
 					<h2>Monster</h2>
 					<div class="healthbar">
 						<div class="health">
-							<span class="text-white">100</span>
+							<span class="text-white">{{monsterLife}}</span>
 						</div>
 					</div>
 				</div>
