@@ -10,3 +10,11 @@
 	width: 200px;
 	height: 40px;
 }
+
+.player-options {
+	margin-top: 40px;
+}
+
+button:hover {
+	cursor: pointer;
+}
