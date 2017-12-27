@@ -13,8 +13,13 @@
 
 .player-options {
 	margin-top: 40px;
+	border: 1px solid #E0E0E0;
 }
 
 button:hover {
 	cursor: pointer;
+}
+
+button {
+	margin: 10px;
 }
