@@ -1,0 +1,12 @@
+.healthbar {
+	width: 200px;
+	height: 40px;
+	background-color: #E0E0E0;
+	margin: 0 auto;
+}
+
+.health {
+	background-color: #44ACFC;
+	width: 200px;
+	height: 40px;
+}
