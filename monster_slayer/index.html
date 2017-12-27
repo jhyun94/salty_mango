@@ -33,7 +33,7 @@
 				<div class="col-md-12 text-center">
 					<button @click="start = true" v-if="!start">New Game</button>
 					<div v-if="start">
-						<button>Attack</button>
+						<button @click="attack">Attack</button>
 						<button>Special Attack</button>
 						<button>Heal</button>
 						<button>Give Up</button>
