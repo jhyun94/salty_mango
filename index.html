@@ -4,9 +4,11 @@
 </head>
 <body>
 	<div id="root">
-		<button @click="increment">Increase</button>
-		<p> Counter: {{counter}}</p>
-		<p> Result: {{result}}</p>
+		<ul>
+			<li v-for="(person, index) in people">
+				{{person.name}} {{index}}
+			</li>
+		</ul>
 	</div>
 
 	<script src="main.vue"></script>

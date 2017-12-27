@@ -1,39 +1,17 @@
 new Vue({
   el: '#exercise',
   data: {
-  effectClasses: {
-    highlight: false,
-      shrink: true
+    names: ['Max', 'Anna', 'Chris', 'Manu'],
+    book: {
+      title: 'Lord of the Rings',
+      author: 'J.R.R. Tolkiens',
+      books: '3'
     },
-  float: 'float',
-    userClass: '',
-    isVisible: true,
-    myStyle: {
-    width: '100px',
-      height: '150px',
-      backgroundColor: 'gray'
+    testData: {
+      name: 'TESTOBJECT', 
+      id: 10,
+      data: [1.67, 1.33, 0.98, 2.21]
     },
-    progressBar: {
-    width: '0px',
-      backgroundColor: 'red'
-    }
-  },
-  methods: {
-    startEffect: function() {
-    var vm = this;
-      setInterval(function() {
-      vm.effectClasses.highlight = !vm.effectClasses.highlight;
-        vm.effectClasses.shrink = !vm.effectClasses.shrink;
-      }, 1000);
-    },
-    startProgress: function() {
-    var vm = this;
-      var width = 0;
-     
-    setInterval(function() {
-      width = width + 10;
-      vm.progressBar.width = width + 'px';
-      }, 500);
-    }
+    show: true
   }
 });
