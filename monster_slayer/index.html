@@ -11,7 +11,7 @@
 				<div class="col-md-6 text-center">
 					<h2>You</h2>
 					<div class="healthbar">
-						<div class="health">
+						<div class="health" :style="{ width: playerLife + '%'}">
 							<span class="text-white">{{playerLife}}</span>
 						</div>
 					</div>
@@ -20,7 +20,7 @@
 				<div class="col-md-6 text-center">
 					<h2>Monster</h2>
 					<div class="healthbar">
-						<div class="health">
+						<div class="health" :style="{ width: monsterLife + '%'}">
 							<span class="text-white">{{monsterLife}}</span>
 						</div>
 					</div>
@@ -34,8 +34,8 @@
 					<button @click="start = true" v-if="!start">New Game</button>
 					<div v-if="start">
 						<button @click="attack">Attack</button>
-						<button>Special Attack</button>
-						<button>Heal</button>
+						<button @click="specialAttack">Special Attack</button>
+						<button @click="heal">Heal</button>
 						<button>Give Up</button>
 					</div>
 				</div>
