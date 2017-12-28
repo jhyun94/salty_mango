@@ -18,6 +18,11 @@ new Vue({
 			this.playerLife = this.playerLife + this.generateGeneral();
 			this.playerLife = this.playerLife - this.generateGeneral();
 		},
+		restart(){
+			this.playerLife = 100;
+			this.monsterLife = 100;
+			this.start = false;
+		},
 		generateGeneral(){
 			return Math.floor(Math.random() * 10) + 1;
 		},
