@@ -11,15 +11,11 @@
         <div class="row">
             <div class="col-xs-12 col-sm-6">
                 <ul class="list-group">
-                    <li
-                            class="list-group-item"
-                            v-for="index in 5">
-                        Server #{{ index }}
-                    </li>
+                  <server v-for=" i in 5"></server>
                 </ul>
             </div>
             <div class="col-xs-12 col-sm-6">
-                <serverDetail></serverDetail>
+                <server-detail></server-detail>
             </div>
         </div>
         <hr>
@@ -35,12 +31,12 @@
 
 <script>
 import serverDetail from "./serverDetails.vue";
-import servers from "./servers.vue";
+import server from "./servers.vue";
 export default {
   name: 'app',
   components: {
     serverDetail,
-    servers
+    server
   },
   data () {
     return {
