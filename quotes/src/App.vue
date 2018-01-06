@@ -2,7 +2,7 @@
   <div class="container">
     <h4>Quotes Added</h4>
     <div class="quote-bar">
-      <div class="active-quotes-bar" :style="{width: numOfQuotes*10 + '%'}"></div>
+      <div class="active-quotes-bar text-center" :style="{width: numOfQuotes*10 + '%'}"><span>{{numOfQuotes}}/10</span></div>
     </div>
     <new-quotes :numOfQuotes="numOfQuotes"></new-quotes>
     <quotes></quotes>
@@ -49,5 +49,9 @@ export default {
 .active-quotes-bar {
   background-color: blue;
   height: 20px;
+}
+
+span {
+  color: #fff;
 }
 </style>

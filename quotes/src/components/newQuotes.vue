@@ -28,11 +28,11 @@ export default {
 		},
 
 		checkQuotes(){
-			if(this.numOfQuotes <= 10){
-				return 
+			if(this.numOfQuotes == 10){
+				return true
 			}
 
-			return true
+			return false
 		}
 	}
 
