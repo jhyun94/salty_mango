@@ -9,6 +9,7 @@
 </template>
 
 <script>
+	import { EventBus } from '../main.js';
 	export default {
 		data() {
 			return {
@@ -16,6 +17,12 @@
 					'Whether you think you can or you think you can’t, you’re right'
 				]
 			}
+		},
+
+		mounted(){
+			EventBus.$on('sendQuote', (data) => {
+				console.log(data);
+			})
 		}
 	}
 </script>
