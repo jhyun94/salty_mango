@@ -8,6 +8,8 @@
 <script>
 import { EventBus } from '../main.js';
 export default {
+	props: ['numOfQuotes'],
+
 	data() {
 		return {
 			quote: ''
@@ -16,8 +18,21 @@ export default {
 
 	methods: {
 		onButtonClick(){
-			EventBus.$emit('sendQuote', this.quote);
-			this.quote = '';
+			if(this.checkQuotes()){
+				alert('Please delete some quotes before adding new ones')
+			} else {
+				EventBus.$emit('sendQuote', this.quote);
+				EventBus.$emit('quoteAdded');
+				this.quote = '';
+			}
+		},
+
+		checkQuotes(){
+			if(this.numOfQuotes <= 10){
+				return 
+			}
+
+			return true
 		}
 	}
 
