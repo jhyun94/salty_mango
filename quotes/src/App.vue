@@ -3,7 +3,7 @@
     <h4>Quotes Added</h4>
     <new-quotes></new-quotes>
     <quotes></quotes>
-    <div>
+    <div class="text-center">
       <p>Info: Click on a quote to delete</p>
     </div>
   </div>
