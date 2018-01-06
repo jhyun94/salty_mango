@@ -21,7 +21,7 @@
 
 		mounted(){
 			EventBus.$on('sendQuote', (data) => {
-				console.log(data);
+				this.quotesList.push(data);
 			})
 		}
 	}
